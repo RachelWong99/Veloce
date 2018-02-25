@@ -51,14 +51,6 @@ public class MainActivity extends AppCompatActivity{
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
-        mBtLaunchActivity = (Button) findViewById(R.id.bt_launch_activity);
-        mBtLaunchActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                launchProfile();
-            }
-        });
-
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         mDrawerToggle = new ActionBarDrawerToggle(
