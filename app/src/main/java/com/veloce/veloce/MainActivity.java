@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity{
 
                         switch (menuItem.getItemId()) {
                             case R.id.nav_profile: launchProfile(); break;
-                            case R.id.nav_current_trip: launchCurrentTrip(); break;
+                            case R.id.nav_current_trip_map: launchCurrentTrip(); break;
                             default: break;
 
                         }
@@ -113,7 +113,6 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private void launchProfile() {
-
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }

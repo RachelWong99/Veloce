@@ -26,10 +26,12 @@
     <string name="slideshow">Slideshow</string>
     <string name="drawer_close">Close</string>
     <string name="drawer_open">Open</string>
-    <string name="profile">Profile</string>
-    <string name="current_trip">Current Trip</string>
+    <string name="profile">Your Profile</string>
+    <string name="current_trip_map">Map</string>
     <string name="title_activity_current_trip">CurrentTripActivity</string>
     <string name="title_activity_current_trips">Map</string>
+    <string name="trip_info">Trip Info</string>
+    <string name="nav_past_trips">Past Trips</string>
 
 
 </resources>

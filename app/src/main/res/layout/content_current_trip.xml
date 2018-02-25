@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.veloce.veloce.CurrentTripActivity"
+    tools:context="com.veloce.veloce.CurrentTripsActivity"
     tools:showIn="@layout/activity_current_trip">
 
 </android.support.constraint.ConstraintLayout>

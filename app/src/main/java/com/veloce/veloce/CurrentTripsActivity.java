@@ -12,6 +12,20 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.widget.Toast;
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 public class CurrentTripsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -56,6 +70,12 @@ public class CurrentTripsActivity extends FragmentActivity implements OnMapReady
         mMap.addMarker(new MarkerOptions().position(torontoEastHarbour).title("Marker in Toronto East Harbour"));
         LatLng montreal = new LatLng(45.499983, -73.566643);
         mMap.addMarker(new MarkerOptions().position(montreal).title("Marker in Montreal : dest"));
+
+        PolylineOptions line=
+                new PolylineOptions().add(torontoEastHarbour, montreal)
+                        .width(5).color(Color.BLUE);
+
+        mMap.addPolyline(line);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(torontoEastHarbour));
         enableMyLocation();
     }

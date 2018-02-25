@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/profile"
-            android:paddingTop="200dp"/>
-        <item
-            android:id="@+id/nav_current_trip"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/current_trip" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/tools" />
+        <item android:title="Current Trip">
+            <menu>
+                <item
+                    android:id="@+id/trip_info"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="@string/trip_info"
+                    android:paddingTop="200dp"/>
+                <item
+                    android:id="@+id/nav_current_trip_map"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="@string/current_trip_map" />
+            </menu>
+        </item>
+        <item android:title="Your Profile">
+            <menu>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="@string/profile"
+                    android:paddingTop="200dp"/>
+                <item
+                    android:id="@+id/nav_past_trips"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="@string/nav_past_trips" />
+            </menu>
+        </item>
     </group>
 </menu>
